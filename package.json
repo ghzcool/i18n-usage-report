@@ -1,0 +1,25 @@
+{
+  "name": "i18n-usage-report",
+  "version": "1.0.0",
+  "description": "find usage of translations and not used values",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js -P C:\\work\\NBP\\dnafe-dss-ui\\src -T C:\\work\\NBP\\dnafe-dss-ui\\src\\locales\\en.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghzcool/i18n-usage-report.git"
+  },
+  "keywords": [
+    "i18n",
+    "usage",
+    "translation",
+    "find"
+  ],
+  "author": "Pavel Pirogov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghzcool/i18n-usage-report/issues"
+  },
+  "homepage": "https://github.com/ghzcool/i18n-usage-report#readme"
+}
