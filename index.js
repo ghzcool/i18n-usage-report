@@ -1,9 +1,9 @@
 const fs = require("fs");
 
 const args = {
-  projectPath: './',
-  translationPath: './locales/en.json',
-  singleQuote: false
+  projectPath: process.env.PROJECT_PATH ?? './',
+  translationPath: process.env.TRANSLATION_PATH ?? './locales/en.json',
+  singleQuote: process.env.SINGLE_QUOTE ? true : false
 };
 
 for (let i = 0; i < process.argv.length; i++) {

@@ -4,7 +4,7 @@
   "description": "find usage of translations and not used values",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js -P C:\\work\\NBP\\dnafe-dss-ui\\src -T C:\\work\\NBP\\dnafe-dss-ui\\src\\locales\\en.json"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
