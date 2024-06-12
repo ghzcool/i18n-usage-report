@@ -1,6 +1,6 @@
 {
   "name": "i18n-usage-report",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "find usage of translations and not used values",
   "main": "index.js",
   "bin": "./index.js",

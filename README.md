@@ -20,7 +20,13 @@ SINGLE_QUOTE if single quotes are used in code
 ## Usage example
 
 ```
-npx i18n-usage-report -P ./project_path/src -T ./project_path/src/locales/en.json
+npm install i18n-usage-report
+
+node ./node_modules/i18n-usage-report -P ./src -T ./src/locales/en.json
+```
+or
+```
+npx i18n-usage-report -P ./src -T ./src/locales/en.json
 ```
 
 Script will get keys from translation file, check usage of these keys in project files and report unused keys.
