@@ -49,16 +49,16 @@ const updateUnusedKeys = () => {
 updateUnusedKeys();
 
 const checkFileContent = (path) => {
-  console.log("checkFileContent", path);
+  // console.log("checkFileContent", path);
   const content = fs.readFileSync(path, {encoding: "utf8", flag: 'r'});
   let found = false;
   for (const key of unusedKeys) {
     const part = args.singleQuote ? `'${key}'` : `"${key}"`;
-    console.log("test part", part);
+    // console.log("test part", part);
     if (content.indexOf(part) !== -1) {
       usedKeys[key] = true;
       found = true;
-      console.log("found");
+      // console.log("found");
     }
   }
   if (found) {
@@ -67,7 +67,7 @@ const checkFileContent = (path) => {
 };
 
 const checkProjectRecursive = (path) => {
-  console.log("checkProjectRecursive", path);
+  // console.log("checkProjectRecursive", path);
   const items = fs.readdirSync(path, {withFileTypes: true});
   const directories = [...items].filter(item => item.isDirectory()).map(item => item.name);
   const files = [...items].filter(item => item.isFile()).map(item => item.name);
