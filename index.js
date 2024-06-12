@@ -24,7 +24,16 @@ for (let i = 0; i < process.argv.length; i++) {
   }
 }
 
-const json = require(args.translationPath);
+const jsonString = fs.readFileSync(args.translationPath, {encoding: "utf8", flag: 'r'});
+let json = {};
+
+try {
+  json = JSON.parse(jsonString);
+} catch(error) {
+  console.error(error);
+  return;
+}
+
 const keys = [];
 const usedKeys = {};
 let unusedKeys = [];
